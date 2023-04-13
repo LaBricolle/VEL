@@ -2,11 +2,13 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+#accBody{
   background-color: #8B82FE;
 }
 
 p{
-  background-color: #FFBB11;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -23,27 +25,32 @@ p{
 }
 
 .logo {
-  position: absolute;
-  /* top: 0; */
-  right: 60px;
-  width: 250px; 
-  height: auto; 
+  width: 250px;
+  height: auto;
+}
+
+.container-acc {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: #FFBB11;
+  padding-top: 30px;
 }
 
 .horizontal-div {
-  height: 200px;
-  width: auto;
-  background-color: #FFBB11;
-  border-collapse: collapse;
-
+  display: flex;
+  align-items: center;
 }
 
+.horizontal-div p {
+  width: 300px;
+}
+
+.horizontal-div img {
+  max-height: 150px;
+  max-width: 100%;
+}
 /* Navbar */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 a.active{
   color: #8B82FE!important;
@@ -235,16 +242,17 @@ a.active{
   }
 }
 .back{
-  height: 5vh;
+  height: 15vh;
   background-color: #8b82fe;
 }
 .titre{
   position: relative;
-  font-size: 250%;
+  font-size: 30px;
   top: 7vh;
   left: 107vh;
   width: 450px;
   color: white;
+  margin: 0;
 }
 
 .heading-primary {
@@ -255,7 +263,7 @@ a.active{
 
 .accordion dl,
 .accordion-list {
-  border: 1px solid #ddd;
+  border: 1px solid #FFF;
 }
 .accordion dl:after,
 .accordion-list:after {
@@ -268,7 +276,7 @@ a.active{
 
 .accordion dd,
 .accordion__panel {
-  background-color: #eee;
+  background-color: #FFF;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -279,7 +287,9 @@ a.active{
 
 .accordion {
   position: relative;
-  background-color: #eee;
+  background-color: #FFF;
+  width: 750px;
+  margin: 0 auto;
 }
 
 .container {
@@ -299,6 +309,7 @@ a.active{
   color: #fff;
   transition: background-color 0.5s ease-in-out;
   border-bottom: 1px solid #ffbb11;
+  border-radius: 15px;
 }
 .accordionTitle:before,
 .accordion__Heading:before {
@@ -337,10 +348,6 @@ a.active{
 
 .accordionItem.is-collapsed {
   max-height: 0;
-}
-
-.no-js .accordionItem.is-collapsed {
-  max-height: auto;
 }
 
 .animateIn {
