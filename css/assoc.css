@@ -6,15 +6,20 @@ body{
     background: white;
     font-family: 'Poppins', sans-serif;
 }
-svg {
+
+.bodynightline{
+    background: #8B82FE;
+    font-family: 'Poppins', sans-serif;
+}
+.svg1 {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
 .imgnight{
-    height: 80%;
-    width:80%;
+    height: 70%;
+    width:70%;
     margin-top:-40px;
     margin-left:20px;
 }
@@ -26,15 +31,16 @@ svg {
 }
 
 .imgbde{
-    height: 50%;
-    width:50%;
-    margin-top:50px;
+    height: 60%;
+    width:60%;
+    margin-top:0px;
     margin-left:20px;
 }
-p{
-    color:white;
-}
 .pcarte{
+    color:white;
+    margin-top: 10px;
+}
+.h2carte{
     color:white;
 }
 .container {
@@ -74,7 +80,7 @@ p{
  
 footer {
     background-color: #FFBB11;;
-    padding: 20px 0;
+    padding: 16px 0;
     text-align: center;
   }
   
