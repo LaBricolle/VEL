@@ -1,4 +1,3 @@
-
 (function(){
 	var d = document,
 	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
